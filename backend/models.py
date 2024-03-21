@@ -10,4 +10,6 @@ class Contact(db.Model):
         return {
             "id": self.id,
             "firstName":self.first_name,
+            "lastName":self.last_name,
+            "email":self.email,
         }
