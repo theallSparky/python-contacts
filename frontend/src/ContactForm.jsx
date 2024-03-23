@@ -16,7 +16,7 @@ const ContactForm = ({}) => {
     const options = {
       method: "POST",
       headers: {
-        "Content-Type": "applicaton/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
     };
@@ -58,7 +58,7 @@ const ContactForm = ({}) => {
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
-      <button type="submit"></button>
+      <button type="submit">Create Contact</button>
     </form>
   );
 };
