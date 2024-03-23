@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ContactList from "./ContactList";
 import "./App.css";
+import ContactForm from "./ContactForm";
 
 function App() {
   const [contacts, setContacts] = useState([]);
@@ -15,7 +16,12 @@ function App() {
     setContacts(data.contacts);
     console.log(data.contacts);
   };
-  return <ContactList contacts={contacts} />;
+  return (
+    <>
+      <ContactList contacts={contacts} />
+      <ContactForm />
+    </>
+  );
 }
 
 export default App;
