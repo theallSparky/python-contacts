@@ -13,8 +13,24 @@ const ContactList = ({ contacts }) => {
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          {contacts.map((contact) => (
+            <tr key={contact.id}>
+              <td>{contact.firstName}</td>
+              <td>{contact.lastName}</td>
+              <td>{contact.email}</td>
+              <td>
+                <button>Update</button>
+              </td>
+              <td>
+                <button>Delete</button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   );
 };
+
+export default ContactList;
