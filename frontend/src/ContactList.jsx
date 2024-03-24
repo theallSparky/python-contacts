@@ -7,7 +7,7 @@ const ContactList = ({ contacts, updateContact, updateCallback }) => {
         method: "DELETE",
       };
       const response = await fetch(
-        `http:////127.0.0.1:5000/delete_contact/${id}`,
+        `http://127.0.0.1:5000/delete_contact/${id}`,
         options
       );
       if (response.status === 200) {
@@ -40,8 +40,6 @@ const ContactList = ({ contacts, updateContact, updateCallback }) => {
               <td>{contact.email}</td>
               <td>
                 <button onClick={() => updateContact(contact)}>Update</button>
-              </td>
-              <td>
                 <button onClick={() => onDelete(contact.id)}>Delete</button>
               </td>
             </tr>
