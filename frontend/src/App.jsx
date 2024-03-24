@@ -54,7 +54,7 @@ function App() {
               &times;
             </span>
             <ContactForm
-              exisitngContact={currentContact}
+              existngContact={currentContact}
               updateCallback={onUpdate}
             />
           </div>
