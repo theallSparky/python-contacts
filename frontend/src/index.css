@@ -1,3 +1,5 @@
-th {
-  margin: 1px;
+input,
+button,
+label {
+  margin-top: 10px;
 }
