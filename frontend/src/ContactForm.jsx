@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const ContactForm = ({ existingContact = {}, updateCallback }) => {
   const [firstName, setFirstName] = useState(existingContact.firstName || "");
-  const [lastName, setlastName] = useState(existingContact.lastName || "");
+  const [lastName, setLastName] = useState(existingContact.lastName || "");
   const [email, setEmail] = useState(existingContact.email || "");
 
   const updating = Object.entries(existingContact).length !== 0;
@@ -50,7 +50,7 @@ const ContactForm = ({ existingContact = {}, updateCallback }) => {
           type="text"
           id="lastName"
           value={lastName}
-          onChange={(e) => setlastName(e.target.value)}
+          onChange={(e) => setLastName(e.target.value)}
         />
       </div>
       <div>
